@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.banking_system.homework.SampleTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.banking_system.homework.SampleTest
+bankCreditTest(com.banking_system.homework.SampleTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<480.22999999999996> but was:<480.23>
+	at com.banking_system.homework.SampleTest.bankCreditTest(SampleTest.java:101)
+
