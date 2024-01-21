@@ -8,14 +8,14 @@ public abstract class Account implements AccountInterface {
 	private AccountHolder accountHolder;
 	private Long accountNumber;
 	private int pin;
-	private BigDecimal balance;
+	private double balance;
 
 	protected Account(AccountHolder accountHolder, Long accountNumber, int pin,
 			double startingDeposit) {
 		this.accountHolder = accountHolder;
 		this.accountNumber = accountNumber;
 		this.pin = pin;
-		this.balance = BigDecimal.valueOf(startingDeposit);
+		this.balance = startingDeposit;
 	}
 
 	@Override
@@ -25,12 +25,12 @@ public abstract class Account implements AccountInterface {
 
 	@Override
 	public boolean validatePin(int attemptedPin) {
-		return attemptedPin == this.getPin();
+		return this.getPin() == attemptedPin;
 	}
 
 	@Override
 	public double getBalance() {
-		return this.balance.doubleValue();
+		return this.balance;
 	}
 
 	@Override
@@ -45,17 +45,17 @@ public abstract class Account implements AccountInterface {
 
 	@Override
 	public void creditAccount(double amount) {
-		this.balance = this.balance.add(BigDecimal.valueOf(amount));
+		this.balance = BigDecimal.valueOf(this.balance).add(BigDecimal.valueOf(amount)).doubleValue();
 	}
 
 	@Override
 	public boolean debitAccount(double amount) {
-		if (amount > this.balance.doubleValue()) {
+		if (amount > this.balance) {
 			System.out.println("Insufficient Fund. Debit cannot proceed.");
 			return false;
 		}
 
-		this.balance = this.balance.subtract(BigDecimal.valueOf(amount));
+		this.balance = BigDecimal.valueOf(this.balance).subtract(BigDecimal.valueOf(amount)).doubleValue();
 
 		return true;
 	}

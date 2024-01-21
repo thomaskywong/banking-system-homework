@@ -28,7 +28,7 @@ public class Bank implements BankInterface{
 			throw new IllegalArgumentException("Invalid pin number. Pin number shall be > 0.");
 		
 		if (startingDeposit < 0) 
-			throw new IllegalArgumentException("Invalid deposition amount. Amount shall be >= 0.");
+			throw new IllegalArgumentException("Invalid deposit amount. Amount shall be >= 0.");
 		
 		CommercialAccount account = new CommercialAccount(company, ++accNumCount, pin, startingDeposit);
 		this.accounts.put(accNumCount, account);
@@ -45,7 +45,7 @@ public class Bank implements BankInterface{
 			throw new IllegalArgumentException("Invalid pin number. Pin number shall be > 0.");
 		
 		if (startingDeposit < 0) 
-			throw new IllegalArgumentException("Invalid deposition amount. Amount shall be >= 0.");
+			throw new IllegalArgumentException("Invalid deposit amount. Amount shall be >= 0.");
 
 		ConsumerAccount account = new ConsumerAccount(person, ++accNumCount, pin, startingDeposit);
 		this.accounts.put(accNumCount, account);
@@ -66,7 +66,7 @@ public class Bank implements BankInterface{
 	@Override
 	public void credit(Long accountNumber, double amount) {
 		if(amount <= 0) 
-			throw new IllegalArgumentException("Invalid deposit amount. Amount shall be > 0");
+			throw new IllegalArgumentException("Invalid deposit amount. Amount shall be > 0.");
 
 		this.getAccount(accountNumber).creditAccount(amount);
 	}
@@ -74,10 +74,10 @@ public class Bank implements BankInterface{
 	@Override
 	public boolean debit(Long accountNumber, double amount) {
 		if(amount <= 0) 
-			throw new IllegalArgumentException("Invalid debit amount. Amount shall be > 0");
+			throw new IllegalArgumentException("Invalid debit amount. Amount shall be > 0.");
 		
 		if(amount > this.getAccount(accountNumber).getBalance()) {
-			System.out.println("Insufficient fund in account");
+			System.out.println("Insufficient fund in account.");
 			return false;
 		}
 

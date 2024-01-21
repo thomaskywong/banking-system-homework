@@ -6,14 +6,14 @@ public interface TransactionInterface {
 	 * @return The account balance for account {@link Transaction#accountNumber}
 	 *         .
 	 */
-	abstract double getBalance();
+	double getBalance();
 
 	/**
 	 * @param amount
 	 *            The amount to credit/deposit into account
 	 *            {@link Transaction#accountNumber}
 	 */
-	abstract void credit(double amount);
+	void credit(double amount);
 
 	/**
 	 * @param amount
@@ -21,5 +21,5 @@ public interface TransactionInterface {
 	 *            {@link Transaction#accountNumber}
 	 * @return true if amount could be withdrawn; otherwise, return false.
 	 */
-	abstract boolean debit(double amount);
+	boolean debit(double amount);
 }
