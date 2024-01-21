@@ -35,7 +35,7 @@ public class Transaction implements TransactionInterface{
 	@Override
 	public void credit(double amount) {
 		if(amount <= 0) 
-			throw new IllegalArgumentException("Invalid deposit amount. Amount shall be > 0");
+			throw new IllegalArgumentException("Invalid deposit amount. Amount shall be > 0.");
 		
 		this.bank.credit(this.accountNumber, amount);
 	}
@@ -43,7 +43,7 @@ public class Transaction implements TransactionInterface{
 	@Override
 	public boolean debit(double amount) {
 		if(amount <= 0) 
-			throw new IllegalArgumentException("Invalid debit amount. Amount shall be > 0");
+			throw new IllegalArgumentException("Invalid debit amount. Amount shall be > 0.");
 		
 		return bank.debit(this.accountNumber, amount);
 	}

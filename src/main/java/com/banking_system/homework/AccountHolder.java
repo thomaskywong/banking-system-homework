@@ -10,7 +10,7 @@ public abstract class AccountHolder {
 	 */
 	public AccountHolder(int idNumber) {
     if (idNumber <= 0) {
-      throw new IllegalArgumentException("Invalid ID number <= 0. ID number shall be > 0");
+      throw new IllegalArgumentException("Invalid ID number <= 0. ID number shall be > 0.");
     }
 		this.idNumber = idNumber;
 	}

@@ -33,7 +33,5 @@ public class ConsumerAccount extends Account{
 	public int hashCode() {
 		return Objects.hash(super.hashCode());
 	}
-
 	
-
 }

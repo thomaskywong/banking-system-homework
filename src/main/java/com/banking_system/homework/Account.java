@@ -1,7 +1,6 @@
 package com.banking_system.homework;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Objects;
 
 public abstract class Account implements AccountInterface {
