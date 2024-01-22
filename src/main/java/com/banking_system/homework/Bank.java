@@ -119,4 +119,36 @@ public class Bank implements BankInterface {
 	public int hashCode() {
 		return Objects.hash(this.accounts);
 	}
+
+	// public static void main(String[] args) {
+		
+	// 	Person p1 = new Person("Thomas", "Wong", 1);
+	// 	Person p2 = new Person("Peter", "Lee", 2);
+
+
+	// 	Company c1 = new Company("ABC company", 1);
+	// 	Company c2 = new Company("DEF company", 2);
+
+	// 	Bank b1 = new Bank();
+	// 	b1.openCommercialAccount(c1, 1234, 100_000.0);
+	// 	b1.openCommercialAccount(c2, 5678, 200_000.0);
+	// 	b1.openConsumerAccount(p1, 9012, 0.0d);
+
+	// 	System.out.println();
+	// 	System.out.println(b1);
+
+	// 	Bank b2 = new Bank();
+	// 	b2.openCommercialAccount(c1, 1234, 100_000.0);
+	// 	b2.openCommercialAccount(c2, 5678, 200_000.0);
+	// 	b2.openConsumerAccount(p1, 9012, 0.0d);
+
+	// 	System.out.println();
+	// 	System.out.println(b2);
+
+	// 	System.out.println(b1.hashCode());
+	// 	System.out.println(b2.hashCode());
+
+	// 	System.out.println(b1.equals(b2));
+	// 	System.out.println(b1.equals(b1));
+	// }
 }
