@@ -11,6 +11,10 @@ public abstract class Account implements AccountInterface {
 
 	protected Account(AccountHolder accountHolder, Long accountNumber, int pin,
 			double startingDeposit) {
+		
+		Objects.requireNonNull(accountHolder);
+		Objects.requireNonNull(accountNumber);
+
 		this.accountHolder = accountHolder;
 		this.accountNumber = accountNumber;
 		this.pin = pin;

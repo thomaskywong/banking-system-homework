@@ -47,4 +47,28 @@ public class Transaction implements TransactionInterface{
 		
 		return bank.debit(this.accountNumber, amount);
 	}
+
+	@Override
+	public String toString() {
+		return "Transaction(accountNumber=" + this.accountNumber + ", bank=" + this.bank +")";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if ( this == obj ) 
+			return true;
+		
+		if (!(obj instanceof Transaction))
+			return false;
+		
+		Transaction transaction = (Transaction) obj;
+
+		return Objects.equals(transaction.accountNumber, this.accountNumber)
+			     && Objects.equals(transaction.bank, this.bank);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(this.accountNumber, this.bank);
+	}
 }

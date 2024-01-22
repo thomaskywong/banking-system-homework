@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.banking_system.homework.HiddenTest" time="0.032" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.banking_system.homework.HiddenTest" time="0.049" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HK"/>
     <property name="sun.boot.library.path" value="C:\software\zulu17.46.19-ca-jdk17.0.9-win_x64\bin"/>
-    <property name="sun.java.command" value="C:\Users\thoma\AppData\Local\Temp\surefire14681776532311275025\surefirebooter2041824528806374674.jar C:\Users\thoma\AppData\Local\Temp\surefire14681776532311275025 2024-01-21T08-25-56_542-jvmRun1 surefire11339252814142966894tmp surefire_08239597450386553783tmp"/>
+    <property name="sun.java.command" value="C:\Users\thoma\AppData\Local\Temp\surefire8405153250205548515\surefirebooter10123169808817427182.jar C:\Users\thoma\AppData\Local\Temp\surefire8405153250205548515 2024-01-22T21-21-31_332-jvmRun1 surefire15349389349918980108tmp surefire_07818943817140590462tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\software\Git\github\banking-system-homework\target\test-classes;C:\software\Git\github\banking-system-homework\target\classes;C:\Users\thoma\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\thoma\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\thoma\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\thoma\AppData\Local\Temp\surefire14681776532311275025\surefirebooter2041824528806374674.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\thoma\AppData\Local\Temp\surefire8405153250205548515\surefirebooter10123169808817427182.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.9+8-LTS"/>
@@ -57,8 +57,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="bankCreditTest" classname="com.banking_system.homework.HiddenTest" time="0"/>
-  <testcase name="debitTest" classname="com.banking_system.homework.HiddenTest" time="0"/>
+  <testcase name="bankCreditTest" classname="com.banking_system.homework.HiddenTest" time="0.002"/>
+  <testcase name="debitTest" classname="com.banking_system.homework.HiddenTest" time="0.006"/>
   <testcase name="transactionTest2" classname="com.banking_system.homework.HiddenTest" time="0"/>
   <testcase name="invalidPinTransaction" classname="com.banking_system.homework.HiddenTest" time="0"/>
   <testcase name="transactionTest" classname="com.banking_system.homework.HiddenTest" time="0"/>
