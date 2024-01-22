@@ -1,7 +1,11 @@
 package com.banking_system.homework;
 
 import java.util.Objects;
+// import lombok.EqualsAndHashCode;
+// import lombok.ToString;
 
+// @EqualsAndHashCode
+// @ToString
 public class Transaction implements TransactionInterface {
 	private Long accountNumber;
 	private Bank bank;
@@ -72,39 +76,4 @@ public class Transaction implements TransactionInterface {
 		return Objects.hash(this.accountNumber, this.bank);
 	}
 
-	// public static void main(String[] args) {
-
-	// 	Person p1 = new Person("Thomas", "Wong", 1);
-	// 	Person p2 = new Person("Peter", "Lee", 2);
-
-	// 	Bank b1 = new Bank();
-	// 	b1.openConsumerAccount(p1, 9012, 20.0d);
-	// 	b1.openConsumerAccount(p2, 3456, 500_000.0d);
-
-	// 	Transaction t1 = null;
-	// 	Transaction t2 = null;
-	// 	Transaction t3 = null;
-	// 	try {
-	// 		t1 = new Transaction(b1, 1L, 9012);
-	// 		t2 = new Transaction(b1, 1L, 9012);
-	// 		t3 = new Transaction(b1, 2L, 3456);
-	// 	} catch (Exception ex) {
-	// 		System.out.println(ex.getMessage());
-	// 	}
-
-	// 	System.out.println();
-	// 	System.out.println(t1);
-	// 	System.out.println();
-	// 	System.out.println(t2);
-
-	// 	System.out.println();
-	// 	System.out.println(t1.equals(t2));
-	// 	System.out.println(t1.equals(t3));
-
-	// 	System.out.println();
-	// 	System.out.println(t1.hashCode());
-	// 	System.out.println(t2.hashCode());
-	// 	System.out.println(t3.hashCode());
-
-	// }
 }
